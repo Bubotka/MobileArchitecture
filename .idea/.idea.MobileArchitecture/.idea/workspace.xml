@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26942cd2-a47e-4ac1-88e9-de0feb4ae466" name="Changes" comment="" />
+    <list default="true" id="0fda4ec5-c4e0-4e3b-a16f-5aa421d7e4fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,26 +10,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/HeroMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/MobileInputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/StandaloneInputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroAnimator.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Cameralogic/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameLoopState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/LoadLevelState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/IGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/IAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/AllServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetsProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="2PVnbNqApxzBPEuTCcEAGHZgoOK" />
+  <component name="ProjectId" id="2Pe8h51Y5ttfa5sDWZCBYA3cpfM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +46,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -64,14 +72,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="26942cd2-a47e-4ac1-88e9-de0feb4ae466" name="Changes" comment="" />
-      <created>1683551188081</created>
+      <changelist id="0fda4ec5-c4e0-4e3b-a16f-5aa421d7e4fd" name="Default Changelist" comment="" />
+      <created>1683806304182</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683551188081</updated>
-      <workItem from="1683551189592" duration="43000" />
-      <workItem from="1683553423539" duration="6484000" />
-      <workItem from="1683560948557" duration="951000" />
+      <updated>1683806304182</updated>
+      <workItem from="1683806308009" duration="12612000" />
+      <workItem from="1683883942991" duration="12475000" />
+      <workItem from="1683904089887" duration="2595000" />
     </task>
     <servers />
   </component>
@@ -84,9 +92,17 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="164" key="SettingsEditor" timestamp="1683558525415">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1683885272566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683558525415" />
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683885272566" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1683896741906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683896741906" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1683896516218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683896516218" />
   </component>
 </project>

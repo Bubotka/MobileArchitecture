@@ -1,24 +1,16 @@
-﻿using CodeBase.Services.Input;
-using UnityEngine;
+using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.States;
+using CodeBase.Logic;
 
 namespace CodeBase.Infrastructure
 {
     public class Game
     {
-        public static IInputService InputService;
-        public Game()
+        public GameStateMachine StateMachine;
+        
+        public Game(ICoroutineRunner coroutineRunner, LoadingCurtain curtain)
         {
-            RegisterInputService();
-        }
-
-        private static void RegisterInputService()
-        {
-            if (Application.isEditor)
-                InputService = new StandaloneInputService();
-            else
-            {
-                InputService = new MobileInputService();
-            }
+            StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain, AllServices.Container);
         }
     }
 }
