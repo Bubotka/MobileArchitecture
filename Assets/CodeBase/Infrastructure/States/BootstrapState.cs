@@ -1,12 +1,14 @@
 ﻿using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Factory;
+using CodeBase.Infrastructure.SaveLoad;
 using CodeBase.Infrastructure.Services;
-using CodeBase.Services.Input;
+using CodeBase.Infrastructure.Services.Input;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.States
 {
-    public class BootstrapState : IState
+    public class  BootstrapState : IState
     {
         private const string Initial = "Initial";
         private readonly GameStateMachine _stateMachine;
@@ -18,7 +20,7 @@ namespace CodeBase.Infrastructure.States
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
             _services = services;
-            
+
             RegisterServices();
         }
 
@@ -31,16 +33,17 @@ namespace CodeBase.Infrastructure.States
         {
         }
 
-        private void EnterLoadLevel() => 
-            _stateMachine.Enter<LoadLevelState,string>("Main");
-
+        private void EnterLoadLevel() =>
+            _stateMachine.Enter<LoadProgressState>();
         private void RegisterServices()
         {
             _services.RegisterSingle<IInputService>(InputService());
             _services.RegisterSingle<IAssets>(new AssetsProvider());
-            _services.RegisterSingle<IGameFactory>
-                (new GameFactory(_services.Single<IAssets>()));
-        }  
+            _services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
+            _services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssets>()));
+            _services.RegisterSingle<ISaveLoadService>(new SaveLoadService
+                (_services.Single<IPersistentProgressService>(),_services.Single<IGameFactory>()));
+        }
 
         private static IInputService InputService()
         {

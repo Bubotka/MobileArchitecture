@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0fda4ec5-c4e0-4e3b-a16f-5aa421d7e4fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -17,7 +23,6 @@
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapState.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/IState.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameLoopState.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetProvider.cs" />
@@ -28,12 +33,28 @@
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/IAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/AllServices.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetsProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/PersistentProgress/PersistentProgressService.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/PersistentProgress/IPersistentProgressService.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/PersistentProgress/ISavedProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Data/Vector3Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SaveLoad/ISaveLoadService.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Data/PlayerProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Data/WorldData.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Data/PositionOnLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SaveLoad/SaveLoadService.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Data/DataExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameRunner.cs" />
       </list>
     </option>
   </component>
@@ -79,7 +100,11 @@
       <updated>1683806304182</updated>
       <workItem from="1683806308009" duration="12612000" />
       <workItem from="1683883942991" duration="12475000" />
-      <workItem from="1683904089887" duration="2595000" />
+      <workItem from="1683904089887" duration="3107000" />
+      <workItem from="1683983319669" duration="3435000" />
+      <workItem from="1684055873396" duration="4853000" />
+      <workItem from="1684067160498" duration="10000" />
+      <workItem from="1684073281541" duration="4059000" />
     </task>
     <servers />
   </component>
@@ -92,17 +117,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1683885272566">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1684058065398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683885272566" />
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1684058065398" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1683896741906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683896741906" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1683896516218">
+    <state x="621" y="119" width="678" height="801" key="find.popup" timestamp="1683983842479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683896516218" />
+    <state x="621" y="119" width="678" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1683983842479" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1684073654235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1684073654235" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1684076047558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1684076047558" />
   </component>
 </project>
