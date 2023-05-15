@@ -23,6 +23,15 @@
           <e p="Editor" t="Include">
             <e p="Tools.cs" t="Include" />
           </e>
+          <e p="Enemy" t="Include">
+            <e p="AgentMoveToHero.cs" t="Include" />
+            <e p="Aggro.cs" t="Include" />
+            <e p="AnimationAlongAgent.cs" t="Include" />
+            <e p="EnemyAnimator.cs" t="Include" />
+            <e p="Follow.cs" t="Include" />
+            <e p="RotateToHero.cs" t="Include" />
+            <e p="TriggerObserver.cs" t="Include" />
+          </e>
           <e p="Hero" t="Include">
             <e p="HeroAnimator.cs" t="Include" />
             <e p="HeroMove.cs" t="Include" />
@@ -143,6 +152,19 @@
             <e p="Graphics" t="Include">
               <e p="FlatDark" t="Include">
                 <e p="Joystick" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="Lich" t="Include">
+              <e p="Animations" t="Include">
+                <e p="Lich" t="Include" />
+              </e>
+              <e p="Materials" t="Include" />
+              <e p="Meshes" t="Include" />
+              <e p="Prefabs" t="Include" />
+              <e p="Textures" t="Include">
+                <e p="PBR" t="Include" />
               </e>
             </e>
           </e>
